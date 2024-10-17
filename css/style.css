@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.libre-franklin-<uniquifier> {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+body{
+	background-color: #f3f3f3;
+	font-family: "Libre Franklin";
+}
+.container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.login{
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: 20px;
+}
+
+.div-logo{
+	margin-top: 20px;
+	text-align: center;
+}
+.perfil{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.rosto{
+	border-radius: 300px;
+	width: 120px;
+	height: 120px;
+}
+.images{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: 25px;
+}
+.celulares{
+	width: 600px;
+	height: 600px;
+}
+
+.botao-continue{
+	background-color: #1399e5;
+	border: 1px solid #1399e5;
+	width: 250px;
+	height: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: white;
+}
+
+.continuar{
+	text-align: center;
+	background-color: white;
+	width: 550px;
+	border: 2px solid #ececec;
+}
+
+.link{
+	color: #1399e5;
+	text-decoration: none;
+}
+.inscreva{
+	text-align: center;
+	margin-top: 40px;
+	width: 550px;
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid #ececec;
+}
+.texto{
+	color: #b9b9bc;
+}
+.baixar{
+	width: 550px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.play{
+	display: flex;
+	justify-content: center;
+}
+.disponivel{
+	width: 200px;
+	height: 60px;
+	margin-left: 10px;
+}
+
+@media (max-width:912px){
+	.images{
+		display: none;
+	}
+	.container{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.login{
+		margin-top: 100px;
+		margin-left: 200px;
+	}
+}
